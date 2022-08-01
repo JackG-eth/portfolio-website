@@ -1,3 +1,159 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+	font-family: "Akkurat";
+	src: url("/static/fonts/Akkurat.eot");
+	src: url("/static/fonts/Akkurat.eot?#iefix") format("embedded-opentype"),
+		url("/static/fonts/Akkurat.woff2") format("woff2"),
+		url("/static/fonts/Akkurat.woff") format("woff"),
+		url("/static/fonts/Akkurat.ttf") format("truetype"),
+		url("/static/fonts/Akkurat.svg#Akkurat") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+body {
+	@apply bg-mycelium-black;
+	overflow-x: hidden;
+	overflow-y: overlay;
+	width: 100vw;
+	min-width: 320px;
+	font-family: "Akkurat", sans-serif;
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+
+/* Nav link active styles */
+.nav-link.active {
+	@apply text-mycelium-lightgreen;
+}
+.nav-link.active .nav-underline {
+	@apply w-full;
+}
+
+/*CUSTOM SCROLLBAR*/
+::-webkit-scrollbar {
+	@apply h-2 w-2;
+}
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+	@apply rounded-sm bg-mycelium-lightgreen;
+	border: 3px solid rgba(0, 0, 0, 0);
+}
+
+/* Lightgreen background on text selection */
+::selection {
+	@apply bg-mycelium-lightgreen text-black;
+}
+
+/* Read more arrow */
+.read-more:hover span {
+	@apply translate-x-5;
+}
+
+/* Research posts */
+.prose {
+	max-width: 800px;
+	color: #fff;
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h1 strong,
+.prose h2 strong,
+.prose h3 strong {
+	@apply text-mycelium-lightgreen;
+	font-weight: normal;
+}
+.prose * {
+	color: #fff;
+}
+.prose a {
+	@apply text-white transition-colors duration-300 hover:text-mycelium-lightgreen;
+}
+.prose *::marker {
+	color: #fff;
+}
+.post-description {
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4; /* number of lines to show */
+	line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.enlarge {
+	transform: scale(1.5);
+}
+.twitter-tweet {
+	margin: 30px auto 0 !important;
+}
+/* Code blocks */
+code:not([class*="language-"]) {
+	padding: 4px 6px;
+	border-radius: 4px;
+	background-color: var(--tw-prose-pre-bg);
+	color: #abb2bf;
+	font-weight: normal;
+}
+code.hljs {
+	background: transparent;
+}
+/* Single code variables */
+.prose :where(code):not(:where([class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
+	content: "";
+}
+
+/* Table headings */
+.prose :where(thead th):not(:where([class~="not-prose"] *)) {
+	color: #fff;
+}
+
+/* Hide up and down arrows on quantity inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+/* Show all project panels when under 1281px */
+@media only screen and (max-width: 1279px) {
+	#pinMaster .panel {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.logo-container,
+	.logo-primary,
+	.logo-node,
+	.logo-research {
+		height: 26px;
+	}
+
+	.logo-primary {
+		width: 121px;
+	}
+	.logo-node {
+		width: 175px;
+	}
+	.logo-research {
+		width: 212px;
+	}
+}

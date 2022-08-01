@@ -1,3 +1,5 @@
+const { title } = require("process");
+
 var w = window.innerWidth;
 var size = w >= 1280 ? "big" : "small";
 var controller;
@@ -8,6 +10,18 @@ var oneFifthScreenHeight = window.innerHeight * 0.2;
 
 function isMobile() {
 	return window.innerWidth < 1280;
+}
+
+function typerTitle() {
+	var text = $('#home .typer-title'),
+	textOne = "University Of Surrey Graduate",
+	textTwo = "Aspiring Developer",
+	textThree = "SpaceX Enthusiast",
+	textFour = "Data Science Addict";
+
+	if (!!$.prototype.typer) {
+	  text.typer([textOne,textTwo,textThree,textFour]);
+	}
 }
 
 function handleResize() {

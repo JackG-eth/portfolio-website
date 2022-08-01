@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import BannerVideo from "./BannerVideo";
+import Animation from "./BackgroundAnimation";
+import Me from "./Me";
 
 const Main = () => {
 	const [loaded, setLoaded] = useState(false);
@@ -15,12 +17,14 @@ const Main = () => {
 	}, []);
 
 	return (
-		<section ref={Main} className="relative h-screen">
+		<section ref={Main} className="relative h-screen w-screen">
 			<BannerVideo
 				loaded={loaded}
 				videoCanPlay={videoCanPlay}
 				setVideoCanPlay={setVideoCanPlay}
 			/>
+			<Animation />
+			<Me />
 		</section>
 	);
 };

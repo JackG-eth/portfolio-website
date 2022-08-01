@@ -9,20 +9,7 @@ const BannerVideo: React.FC<{
 			className={`fixed top-0 left-0 z-0 w-screen overflow-hidden object-cover transition-[height] delay-300 duration-[1.1s] ease-in-out ${
 				loaded && videoCanPlay ? "h-screen" : "h-[0vh]"
 			}`}
-		>
-			<video
-				autoPlay
-				loop
-				muted
-				playsInline
-				onCanPlay={() => setVideoCanPlay(true)}
-				className={`absolute top-0 left-0 z-0 h-screen w-screen transform-gpu object-cover transition-[transform] delay-300 duration-[1.1s] ease-in-out ${
-					loaded && videoCanPlay ? "scale-100" : "scale-150"
-				}`}
-			>
-				<source src="/landing.mp4" type="video/mp4" />
-			</video>
-		</div>
+		></div>
 	);
 };
 
