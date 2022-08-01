@@ -1,5 +1,3 @@
-const { title } = require("process");
-
 var w = window.innerWidth;
 var size = w >= 1280 ? "big" : "small";
 var controller;
@@ -8,22 +6,31 @@ var halfScreen = window.innerHeight * 0.5;
 var threeQuarterScreen = window.innerHeight * 0.75;
 var oneFifthScreenHeight = window.innerHeight * 0.2;
 
+function stepAnimation() {
+	var tl = gsap.timeline();
+	tl.from("#panel-0", 1, { xPercent: 0 });
+	tl.from("#panel-1", 1, { xPercent: 0 });
+	tl.from("#panel-2", 1, { xPercent: 0 });
+
+	return new ScrollMagic.Scene({
+		triggerElement: "#pinMaster",
+		triggerHook: "onLeave",
+		duration: "150%",
+	})
+		.setPin("#pinMaster")
+		.setTween(tl)
+		.addTo(controller);
+}
 function isMobile() {
 	return window.innerWidth < 1280;
 }
-
-function typerTitle() {
-	var text = $('#home .typer-title'),
-	textOne = "University Of Surrey Graduate",
-	textTwo = "Aspiring Developer",
-	textThree = "SpaceX Enthusiast",
-	textFour = "Data Science Addict";
-
-	if (!!$.prototype.typer) {
-	  text.typer([textOne,textTwo,textThree,textFour]);
-	}
+function initialiseScrollMagic() {
+	controller = new ScrollMagic.Controller();
+	const scene = stepAnimation();
+	document.addEventListener("scroll", function () {
+		updateActiveStep(scene.progress());
+	});
 }
-
 function handleResize() {
 	setTimeout(function () {
 		const newSize = !isMobile() ? "big" : "small";
@@ -31,6 +38,8 @@ function handleResize() {
 			size = newSize;
 			if (newSize === "small") {
 				controller.destroy(true);
+			} else {
+				initialiseScrollMagic();
 			}
 		}
 	}, 400);
@@ -73,9 +82,21 @@ function updateActiveStep(progress) {
 		}
 	}
 }
+function removeElement() {
+	const title = document.title;
+	if (!title.includes("Home")) {
+		const scrollMagicDiv = document.getElementById("pinMaster");
+		scrollMagicDiv.remove();
+	}
+}
 function initialiseElements() {
 	const title = document.title;
 	if (title.includes("Home")) {
+		if (!isMobile()) {
+			initialiseScrollMagic();
+		}
+
+		// Disable ScrollMagic on resize and refresh Stellar.js
 		window.addEventListener("resize", function () {
 			handleResize();
 		});
@@ -90,6 +111,7 @@ function initialiseElements() {
 			},
 			true
 		);
+		document.removeEventListener("scroll", updateActiveStep, true);
 	}
 }
 window.addEventListener("popstate", initialiseElements());
