@@ -8,7 +8,7 @@ module.exports = {
 		extend: {
 			colors: {
 				mycelium: {
-					lightgreen: "#9ADA9A",
+					lightgreen: "#dab600",
 					midgreen: "#041F17",
 					black: "#000000",
 				},

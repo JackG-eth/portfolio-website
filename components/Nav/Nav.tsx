@@ -44,20 +44,16 @@ const Navbar = () => {
 
 	const Routes = [
 		{
-			label: "Story",
+			label: "Experience",
 			to: "/our-story/",
 		},
 		{
-			label: "Node",
+			label: "Skills",
 			to: "/node/",
 		},
 		{
-			label: "Research",
+			label: "Projects",
 			to: "/research/",
-		},
-		{
-			label: "Careers",
-			to: "/careers/",
 		},
 		{
 			label: "Contact",
