@@ -49,9 +49,6 @@ const SEO: React.FC<{
 			<meta property="og:type" content="website" />
 			<title>{metaTitle}</title>
 
-			{/* <!-- Facebook Meta Tags --> */}
-			<meta property="og:url" content={siteUrl + currentPath} />
-
 			{/* <!-- Twitter Meta Tags --> */}
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta property="twitter:domain" content="mycelium.ventures" />
@@ -60,7 +57,7 @@ const SEO: React.FC<{
 			<meta name="twitter:description" content={metaDescription} />
 			<meta name="twitter:image" content={imagePreview} />
 
-			<title>{title} | Mycelium</title>
+			<title>{title} | Porfolio</title>
 		</Head>
 	);
 };

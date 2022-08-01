@@ -44,7 +44,7 @@ const Navbar = () => {
 
 	const Routes = [
 		{
-			label: "Experience",
+			label: "Timeline",
 			to: "/our-story/",
 		},
 		{
@@ -112,7 +112,7 @@ const Navbar = () => {
 					className={`absolute left-0 h-full w-full transition-all duration-500 [backdrop-filter:blur(10px)] ${
 						background ? "opacity-100" : "opacity-0"
 					}
-          ${navOpen ? "bg-mycelium-black" : "bg-[rgba(4_,_31_,_23_,_0.67)]"}`}
+          ${navOpen ? "bg-mycelium-black" : "bg-mycelium-black"}`}
 				/>
 				<Container className="relative z-10 flex items-center justify-between">
 					<div className="logo-container relative h-[34px] w-[277px]">

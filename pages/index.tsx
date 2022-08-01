@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "../components/Main/Main";
 import SEO from "../components/General/SEO/SEO";
-import Projects from "../components/Main/Projects/Projects";
+import Timeline from "../components/Main/Timeline/Timeline";
 import Navbar from "../components/Nav/Nav";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
 			/>
 			<Navbar />
 			<Main />
-			<Projects />
+			<Timeline />
 		</>
 	);
 };
