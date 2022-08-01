@@ -8,13 +8,5 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [
-		require("@tailwindcss/typography"),
-		function ({ addComponents }) {
-			addComponents({
-				".container": {
-					maxWidth: "1700px",
-				},
-			});
-		},
-	],
+	]
 };
