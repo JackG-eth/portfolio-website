@@ -12,6 +12,7 @@ const Me = () => {
 				className="pt-4 text-[32px]  leading-tight text-white"
 				text={[
 					"Web3 Full-Stack Developer",
+					"Smart Contract Engineer",
 					"Decentralised Finance Excites Me",
 					"SpaceX Enthusiast",
 				]}
