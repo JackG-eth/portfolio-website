@@ -11,27 +11,27 @@ const MySkills = () => {
 					<div className="grid h-3/4 w-2/4 grid-cols-5 items-center gap-y-14 gap-x-14 ">
 						<div>
 							<img src="/static/img/skills/icons8-solidity-500.png" />
-							<p className="pt-4 pt-4 text-center text-white">Solidity</p>
+							<p className="pt-4 text-center text-white">Solidity</p>
 						</div>
 						<div>
 							<img src="/static/img/skills/icons8-java-500.png" />
-							<p className="pt-4 pt-4 text-center text-white">Java</p>
+							<p className="pt-4 text-center text-white">Java</p>
 						</div>
 						<div>
 							<img src="/static/img/skills/icons8-python-500.png" />
-							<p className="pt-4 pt-4 text-center text-white">Python</p>
+							<p className="pt-4 text-center text-white">Python</p>
 						</div>
 						<div>
 							<img src="/static/img/skills/icons8-typescript-500.png" />
-							<p className="pt-4 pt-4 text-center text-white">Typescript</p>
+							<p className="pt-4 text-center text-white">Typescript</p>
 						</div>
 						<div>
 							<img src="/static/img/skills/icons8-javascript-logo-500.png" />
-							<p className="pt-4 pt-4 text-center text-white">Javascript</p>
+							<p className="pt-4 text-center text-white">Javascript</p>
 						</div>
 						<div>
 							<img src="/static/img/skills/icons8-c-sharp-logo-500.png" />
-							<p className="pt-4 pt-4 text-center text-white">c#</p>
+							<p className="pt-4 text-center text-white">c#</p>
 						</div>
 						<div>
 							<img src="/static/img/skills/icons8-html-5-500.png" />

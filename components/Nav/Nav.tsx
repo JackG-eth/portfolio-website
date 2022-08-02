@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import MenuIcon from "./MenuIcon";
 import MobileNav from "./MobileNav";
 import Socials from "../Socials/Socials";
+import Logo from "../Logos/Logo";
 import Container from "../General/Container/Container";
 
 const Navbar = () => {
@@ -97,6 +98,9 @@ const Navbar = () => {
 				/>
 				<Container className="relative z-10 flex items-center justify-between">
 					<div className="logo-container relative h-[34px] w-[277px]"></div>
+					<div className="absolute left-0 top-0 z-0 transition-opacity duration-500">
+						<Logo onClick={() => onclick} />
+					</div>
 					{/* Desktop menu */}
 					<div
 						className={` absolute right-5 flex items-center justify-between opacity-100 transition-all duration-300 xl:right-12`}

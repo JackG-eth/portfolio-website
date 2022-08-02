@@ -8,12 +8,10 @@ const Logo: React.FC<{
 }> = ({ className, onClick, node, research }) => {
 	return (
 		<button className={`block ${className ? className : ""}`} onClick={onClick}>
-			<Link href="/" scroll={false}>
-				<img
-					className="logo-primary h-[34px] w-[158px] cursor-pointer transition-all duration-300"
-					src="/static/img/logos/primary.svg"
-					alt="Mycelium logo"
-				/>
+			<Link href={"#home"} scroll={false}>
+				<span className="logo-primary h-[34px] w-[158px] cursor-pointer pl-20 text-3xl text-white transition-all duration-300 hover:text-mycelium-lightgreen">
+					Jack Hawkins
+				</span>
 			</Link>
 		</button>
 	);

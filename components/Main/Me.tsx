@@ -2,9 +2,12 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 const Me = () => {
 	return (
-		<div className="relative flex h-screen w-screen flex-col items-center justify-center">
+		<div
+			id="home"
+			className="relative flex h-screen w-screen flex-col items-center justify-center"
+		>
 			<img
-				className="flex h-[300px] w-[300x] rounded-full border-8 shadow-xl"
+				className="flex h-[300px] w-[300x] rounded-full border-8 shadow-xl "
 				src="/static/img/me.png"
 				alt="Mycelium logo"
 			/>
