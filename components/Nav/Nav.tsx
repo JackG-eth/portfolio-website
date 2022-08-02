@@ -47,7 +47,7 @@ const Navbar = () => {
 		},
 		{
 			label: "Skills",
-			to: "/node/",
+			to: "#skills",
 		},
 		{
 			label: "Projects",
