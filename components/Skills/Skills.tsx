@@ -6,6 +6,7 @@ const MySkills = () => {
 			<div className="grid h-2/4 w-2/4 grid-cols-3 items-center gap-y-4 gap-x-12 pl-10 pr-10">
 				<div className="justify-center">
 					<img src="/static/img/skills/icons8-solidity-500.png" />
+					<p className="text-center text-white">Solidity</p>
 				</div>
 				<div>
 					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
