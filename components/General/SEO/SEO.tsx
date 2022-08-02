@@ -18,7 +18,7 @@ const SEO: React.FC<{
 		: process.env.siteTitle;
 	const metaDescription = description || process.env.siteDescription;
 	const imagePreview = image || `${siteUrl}/${process.env.siteImagePreviewUrl}`;
-	const metaAuthor = author || "Mycelium";
+	const metaAuthor = author || "portfolio";
 	const metaPublishedTime = publishedTime || currentDate;
 
 	useEffect(() => {
@@ -51,7 +51,7 @@ const SEO: React.FC<{
 
 			{/* <!-- Twitter Meta Tags --> */}
 			<meta name="twitter:card" content="summary_large_image" />
-			<meta property="twitter:domain" content="mycelium.ventures" />
+			<meta property="twitter:domain" content="portfolio.ventures" />
 			<meta property="twitter:url" content={siteUrl} />
 			<meta name="twitter:title" content={metaTitle} />
 			<meta name="twitter:description" content={metaDescription} />

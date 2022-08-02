@@ -4,7 +4,7 @@ const MySkills = () => {
 	return (
 		<div id="skills" className="relative flex h-screen w-screen pt-40">
 			<div className="relative h-screen w-screen">
-				<h1 className="pb-20 text-center text-3xl text-mycelium-lightgreen">
+				<h1 className="pb-20 text-center text-3xl text-portfolio-lightgreen">
 					Languages & Frameworks
 				</h1>
 				<div className=" flex w-screen justify-center">

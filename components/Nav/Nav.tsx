@@ -52,7 +52,7 @@ const Navbar = () => {
 		},
 		{
 			label: "Projects",
-			to: "/research/",
+			to: "#projects",
 		},
 		{
 			label: "Contact",
@@ -94,7 +94,7 @@ const Navbar = () => {
 					className={`absolute left-0 h-full w-full transition-all duration-500 [backdrop-filter:blur(10px)] ${
 						background ? "opacity-100" : "opacity-0"
 					}
-         			 ${navOpen ? "bg-mycelium-black" : "bg-mycelium-black"}`}
+         			 ${navOpen ? "bg-portfolio-black" : "bg-portfolio-black"}`}
 				/>
 				<Container className="relative z-10 flex items-center justify-between">
 					<div className="logo-container relative h-[34px] w-[277px]"></div>
@@ -109,10 +109,10 @@ const Navbar = () => {
 							return (
 								<div
 									key={i}
-									className="nav-link group relative mr-[60px] text-white transition-colors duration-300 hover:text-mycelium-lightgreen"
+									className="nav-link group relative mr-[60px] text-white transition-colors duration-300 hover:text-portfolio-lightgreen"
 								>
 									<a href={route.to}>{route.label}</a>
-									<span className="nav-underline absolute left-0 right-auto bottom-0 h-0.5 w-0 bg-mycelium-lightgreen transition-all duration-300 ease-in-out group-hover:right-0 group-hover:left-auto group-hover:w-full" />
+									<span className="nav-underline absolute left-0 right-auto bottom-0 h-0.5 w-0 bg-portfolio-lightgreen transition-all duration-300 ease-in-out group-hover:right-0 group-hover:left-auto group-hover:w-full" />
 								</div>
 							);
 						})}

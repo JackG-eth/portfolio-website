@@ -2,14 +2,14 @@ let timelineElements = [
 	{
 		id: 1,
 		title: "Smart Contract Developer ",
-		company: "Mycelium",
+		company: "portfolio",
 		location: "Remote | London",
 		description:
-			"Part of Mycelium’s smart contract development team. Hired via Tracer DAO and tasked with evolving and innovating their existing DeFi protocol. More information about the role can be found on my CV.",
+			"Part of portfolio’s smart contract development team. Hired via Tracer DAO and tasked with evolving and innovating their existing DeFi protocol. More information about the role can be found on my CV.",
 		buttonText: "Company Wesbite",
 		date: "April 2022 - August 2022",
 		icon: "work",
-		link: "https://mycelium.xyz/",
+		link: "https://portfolio.xyz/",
 	},
 	{
 		id: 2,

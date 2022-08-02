@@ -12,7 +12,7 @@ const Home = () => {
 		<>
 			<SEO
 				title="Home"
-				description="Mycelium is an ever-growing collection of engineers, economists and creatives operating on the cutting edge of decentralised blockchain-based technology, whose ventures seek to solve the problems of today's restrictive and opaque financial infrastructure, systems and reality."
+				description="portfolio is an ever-growing collection of engineers, economists and creatives operating on the cutting edge of decentralised blockchain-based technology, whose ventures seek to solve the problems of today's restrictive and opaque financial infrastructure, systems and reality."
 			/>
 			<Navbar />
 			<Main />

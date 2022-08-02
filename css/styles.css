@@ -21,7 +21,7 @@ body {
 }
 
 body {
-	@apply bg-mycelium-black;
+	@apply bg-portfolio-black;
 	overflow-x: hidden;
 	overflow-y: overlay;
 	width: 100vw;
@@ -35,7 +35,7 @@ body {
 
 /* Nav link active styles */
 .nav-link.active {
-	@apply text-mycelium-lightgreen;
+	@apply text-portfolio-lightgreen;
 }
 .nav-link.active .nav-underline {
 	@apply w-full;
@@ -49,13 +49,13 @@ body {
 	@apply bg-transparent;
 }
 ::-webkit-scrollbar-thumb {
-	@apply rounded-sm bg-mycelium-lightgreen;
+	@apply rounded-sm bg-portfolio-lightgreen;
 	border: 3px solid rgba(0, 0, 0, 0);
 }
 
 /* Lightgreen background on text selection */
 ::selection {
-	@apply bg-mycelium-lightgreen text-black;
+	@apply bg-portfolio-lightgreen text-black;
 }
 
 /* Read more arrow */
@@ -74,14 +74,14 @@ body {
 .prose h1 strong,
 .prose h2 strong,
 .prose h3 strong {
-	@apply text-mycelium-lightgreen;
+	@apply text-portfolio-lightgreen;
 	font-weight: normal;
 }
 .prose * {
 	color: #fff;
 }
 .prose a {
-	@apply text-white transition-colors duration-300 hover:text-mycelium-lightgreen;
+	@apply text-white transition-colors duration-300 hover:text-portfolio-lightgreen;
 }
 .prose *::marker {
 	color: #fff;

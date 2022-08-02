@@ -52,7 +52,7 @@ const SubscriptionForm: React.FC<{
 					onClick={(e) => checkForm(e)}
 					ref={buttonRef}
 					type="submit"
-					className="mx-auto mb-8 flex h-10 w-full max-w-xs items-center justify-center rounded-lg border border-mycelium-lightgreen bg-mycelium-midgreen text-sm font-medium text-mycelium-lightgreen transition-colors duration-300 hover:bg-mycelium-lightgreen hover:text-black lg:mt-0 lg:mb-0"
+					className="mx-auto mb-8 flex h-10 w-full max-w-xs items-center justify-center rounded-lg border border-portfolio-lightgreen bg-portfolio-midgreen text-sm font-medium text-portfolio-lightgreen transition-colors duration-300 hover:bg-portfolio-lightgreen hover:text-black lg:mt-0 lg:mb-0"
 				>
 					{submittedText}
 				</button>

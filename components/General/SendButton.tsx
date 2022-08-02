@@ -7,7 +7,7 @@ const Button: React.FC<{
 		<button
 			type={type}
 			onClick={onClick}
-			className="hover:text-mycelium-darkgreen relative mx-auto block h-12 w-[160px] overflow-hidden rounded-xl border border-mycelium-lightgreen bg-transparent bg-clip-content text-white transition-colors duration-300 hover:bg-mycelium-lightgreen"
+			className="hover:text-portfolio-darkgreen relative mx-auto block h-12 w-[160px] overflow-hidden rounded-xl border border-portfolio-lightgreen bg-transparent bg-clip-content text-white transition-colors duration-300 hover:bg-portfolio-lightgreen"
 		>
 			{children}
 		</button>

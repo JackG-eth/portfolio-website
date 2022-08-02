@@ -17,7 +17,7 @@ const LinkedInIcon: React.FC<{ className: string }> = ({ className }) => {
 					id="Path_522"
 					data-name="Path 522"
 					d="M20.966,0H5.517A5.518,5.518,0,0,0,0,5.517V20.966a5.518,5.518,0,0,0,5.517,5.517H20.966a5.517,5.517,0,0,0,5.517-5.517V5.517A5.517,5.517,0,0,0,20.966,0ZM8.828,20.966H5.517V8.828h3.31ZM7.173,7.429A1.947,1.947,0,1,1,9.1,5.482,1.939,1.939,0,0,1,7.173,7.429Zm14.9,13.537h-3.31V14.782c0-3.717-4.414-3.435-4.414,0v6.184h-3.31V8.828h3.31v1.948c1.54-2.854,7.724-3.064,7.724,2.732Z"
-					className="fill-white transition-colors duration-300 group-hover:fill-mycelium-lightgreen"
+					className="fill-white transition-colors duration-300 group-hover:fill-portfolio-lightgreen"
 				/>
 			</svg>
 		</a>

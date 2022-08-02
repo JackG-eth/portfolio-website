@@ -7,7 +7,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				mycelium: {
+				portfolio: {
 					lightgreen: "#dab600",
 					midgreen: "#041F17",
 					black: "#000000",

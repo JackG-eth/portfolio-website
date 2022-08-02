@@ -3,13 +3,13 @@ export default function SocialsText() {
 		<div className="mr-20 w-full text-[16px] xl:max-w-[540px]">
 			{/* Social Links */}
 			<div className="mb-12 flex flex-col leading-7 text-white">
-				<span className="mb-8 text-mycelium-lightgreen">Socials</span>
+				<span className="mb-8 text-portfolio-lightgreen">Socials</span>
 				<span className="underline">
 					<a
 						href="https://github.com/JackG-eth"
 						rel="noopener"
 						target="_blank"
-						className="transition-colors duration-300 hover:text-mycelium-lightgreen"
+						className="transition-colors duration-300 hover:text-portfolio-lightgreen"
 					>
 						Github
 					</a>
@@ -19,7 +19,7 @@ export default function SocialsText() {
 						href="https://www.linkedin.com/in/jack-hawkins97/"
 						rel="noopener"
 						target="_blank"
-						className="transition-colors duration-300 hover:text-mycelium-lightgreen"
+						className="transition-colors duration-300 hover:text-portfolio-lightgreen"
 					>
 						LinkedIn
 					</a>
@@ -29,7 +29,7 @@ export default function SocialsText() {
 						href="https://twitter.com/jackgh_eth"
 						rel="noopener"
 						target="_blank"
-						className="transition-colors duration-300 hover:text-mycelium-lightgreen"
+						className="transition-colors duration-300 hover:text-portfolio-lightgreen"
 					>
 						Twitter
 					</a>
