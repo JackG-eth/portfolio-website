@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
-import Logo from "../Logos/Logo";
 import MenuIcon from "./MenuIcon";
 import MobileNav from "./MobileNav";
 import Socials from "../Socials/Socials";
@@ -45,7 +43,7 @@ const Navbar = () => {
 	const Routes = [
 		{
 			label: "Timeline",
-			to: "/our-story/",
+			to: "#timeline",
 		},
 		{
 			label: "Skills",
@@ -69,23 +67,6 @@ const Navbar = () => {
 			closeNav();
 		}
 	};
-
-	const setActiveLink = () => {
-		const navLinks = document.querySelectorAll(".nav-link a");
-		navLinks.forEach((navLink) => {
-			let href = navLink.getAttribute("href");
-			let container = navLink.parentNode as HTMLElement;
-			if (route.split("/")[1].includes(href.split("/")[1])) {
-				container.classList.add("active");
-			} else {
-				container.classList.remove("active");
-			}
-		});
-	};
-
-	useEffect(() => {
-		setActiveLink();
-	}, [route]);
 
 	useEffect(() => {
 		if (navOpen) {
@@ -112,17 +93,13 @@ const Navbar = () => {
 					className={`absolute left-0 h-full w-full transition-all duration-500 [backdrop-filter:blur(10px)] ${
 						background ? "opacity-100" : "opacity-0"
 					}
-          ${navOpen ? "bg-mycelium-black" : "bg-mycelium-black"}`}
+         			 ${navOpen ? "bg-mycelium-black" : "bg-mycelium-black"}`}
 				/>
 				<Container className="relative z-10 flex items-center justify-between">
 					<div className="logo-container relative h-[34px] w-[277px]"></div>
 					{/* Desktop menu */}
 					<div
-						className={`${
-							route === "/data-feeds"
-								? "pointer-events-none opacity-0"
-								: "pointer-events-none opacity-0 xl:pointer-events-auto xl:opacity-100"
-						} absolute right-5 flex items-center justify-between opacity-0 transition-all duration-300 xl:right-12`}
+						className={` absolute right-5 flex items-center justify-between opacity-100 transition-all duration-300 xl:right-12`}
 					>
 						{Routes.map((route, i) => {
 							return (
@@ -130,9 +107,7 @@ const Navbar = () => {
 									key={i}
 									className="nav-link group relative mr-[60px] text-white transition-colors duration-300 hover:text-mycelium-lightgreen"
 								>
-									<Link scroll={false} href={route.to}>
-										{route.label}
-									</Link>
+									<a href={route.to}>{route.label}</a>
 									<span className="nav-underline absolute left-0 right-auto bottom-0 h-0.5 w-0 bg-mycelium-lightgreen transition-all duration-300 ease-in-out group-hover:right-0 group-hover:left-auto group-hover:w-full" />
 								</div>
 							);
