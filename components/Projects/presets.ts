@@ -1,4 +1,4 @@
-export const projects = {
+export const projects: any = {
 	tracer: [
 		{
 			name: "Mobile Phone Application",
