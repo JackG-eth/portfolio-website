@@ -8,7 +8,7 @@ export default function ContactForm() {
 		>
 			<div className="mr-20 w-full text-[16px] text-white xl:max-w-[800px]">
 				{/* Social Links */}
-				<span className="mb-8 block text-center text-2xl text-portfolio-lightgreen">
+				<span className="mb-8 block text-center text-2xl text-portfolio-midgreen">
 					If you want to get in touch please fill out the form below!
 				</span>
 				<form action="https://formspree.io/f/xvoypbgw" method="POST">
