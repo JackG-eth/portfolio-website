@@ -19,7 +19,6 @@ const Me = () => {
 					"SpaceX Enthusiast",
 				]}
 			/>
-			<div></div>
 		</div>
 	);
 };

@@ -115,11 +115,7 @@ const Navbar = () => {
           ${navOpen ? "bg-mycelium-black" : "bg-mycelium-black"}`}
 				/>
 				<Container className="relative z-10 flex items-center justify-between">
-					<div className="logo-container relative h-[34px] w-[277px]">
-						<div className="absolute left-0 top-0 z-0 transition-opacity duration-500">
-							<Logo onClick={() => closeNav()} />
-						</div>
-					</div>
+					<div className="logo-container relative h-[34px] w-[277px]"></div>
 					{/* Desktop menu */}
 					<div
 						className={`${

@@ -6,7 +6,7 @@ const Main = () => {
 	const Main = useRef<HTMLElement>(null);
 
 	return (
-		<section ref={Main} className="relative h-screen w-screen">
+		<section ref={Main} className="relative h-screen w-screen ">
 			<Animation />
 			<Me />
 		</section>
