@@ -55,7 +55,7 @@ const Navbar = () => {
 		},
 		{
 			label: "Contact",
-			to: "/contact/",
+			to: "#contact",
 		},
 	];
 

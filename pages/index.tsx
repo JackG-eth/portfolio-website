@@ -3,6 +3,9 @@ import Main from "../components/Main/Main";
 import SEO from "../components/General/SEO/SEO";
 import Timeline from "../components/Main/Timeline/Timeline";
 import Navbar from "../components/Nav/Nav";
+import MySkills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
+import ContactForm from "../components/Contact/ContactForm";
 
 const Home = () => {
 	return (
@@ -14,6 +17,9 @@ const Home = () => {
 			<Navbar />
 			<Main />
 			<Timeline />
+			<MySkills />
+			<Projects />
+			<ContactForm />
 		</>
 	);
 };

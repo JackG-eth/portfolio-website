@@ -91,7 +91,7 @@ const Animation = () => {
 								mode: "push",
 							},
 							onHover: {
-								enable: true,
+								enable: false,
 								mode: "repulse",
 							},
 							resize: true,
