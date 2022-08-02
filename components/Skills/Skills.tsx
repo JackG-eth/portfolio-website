@@ -8,29 +8,37 @@ const MySkills = () => {
 					<img src="/static/img/skills/icons8-solidity-500.png" />
 					<p className="text-center text-white">Solidity</p>
 				</div>
-				<div>
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-java-500.png" />
+					<p className="text-center text-white">Java</p>
 				</div>
-				<div>
-					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-python-500.png" />
+					<p className="text-center text-white">Python</p>
 				</div>
-				<div>
-					<img src="/static/img/me.png" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-typescript-500.png" />
+					<p className="text-center text-white">Typescript</p>
 				</div>
-				<div>
-					<img src="/static/img/me.png" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-javascript-logo-500.png" />
+					<p className="text-center text-white">Javascript</p>
 				</div>
-				<div>
-					<img src="/static/img/me.png" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-c-sharp-logo-500.png" />
+					<p className="text-center text-white">c#</p>
 				</div>
-				<div>
-					<img src="/static/img/me.png" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-html-5-500.png" />
+					<p className="text-center text-white">HTML-5</p>
 				</div>
-				<div>
-					<img src="/static/img/me.png" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-css3-500.png" />
+					<p className="text-center text-white">CSS3</p>
 				</div>
-				<div>
-					<img src="/static/img/me.png" />
+				<div className="justify-center">
+					<img src="/static/img/skills/icons8-sql-500.png" />
+					<p className="text-center text-white">SQL</p>
 				</div>
 			</div>
 
