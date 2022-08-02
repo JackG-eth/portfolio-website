@@ -8,31 +8,22 @@ export const projects = {
 			image: "/static/img/projects/epic.jpg",
 		},
 	],
-	reputation: [
+	pba: [
 		{
-			name: "Reputation DAO",
+			name: "Practical Business Analytics",
 			description:
-				"Reputation DAO is building the reputation layer for the open blockchain economy. Leveraging both on-chain and off-chain data insights, Reputation provides capital efficiency and transparency to the DeFi ecosystem.",
-			link: "https://reputation.link",
+				"Analysing periodic Santander bike usage in London to predict future demand.",
+			link: "https://github.com/JackG-eth/Data_Science_Analytics_Coursework/tree/master/RubixOnRailsRApplication",
 			image: "/static/img/projects/pba.jpg",
 		},
 	],
-	another: [
+	speech: [
 		{
-			name: "Mobile Phone Application",
+			name: "Speech Recognition Using Transformers",
 			description:
-				"An Android phone application for visitors to the EPIC wildlife and conservation project. EPICs mission statement is twofold: To create a small but significant wildlife reserve in an area primarily targeted for new housing, and to make the reserve accessible and of maximum interest to the public in order to promote physical and mental well-being and education.",
-			link: "https://github.com/JackG-eth/Dissertation/tree/master/Epic",
-			image: "/static/img/projects/epic.jpg",
-		},
-	],
-	koji: [
-		{
-			name: "Koji Capital",
-			description:
-				"Koji cultivates and invests in community focused projects that are enriching the Web 3.0 ecosystem by providing growth-capital to drive the adoption of a new generation of applications.",
-			link: "https://koji.capital",
-			image: "/static/img/projects/pba.jpg",
+				"Exploring speech recognition technology to provide a hands-free method of communicating requests while in an elevator.",
+			link: "https://github.com/JackG-eth/Speech_Recognition_Using_Transformers",
+			image: "/static/img/projects/ai.jpg",
 		},
 	],
 };

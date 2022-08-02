@@ -9,7 +9,7 @@ module.exports = {
 			colors: {
 				portfolio: {
 					lightgreen: "#dab600",
-					midgreen: "#041F17",
+					midgreen: "#06D6A0",
 					black: "#000000",
 				},
 				grey: {

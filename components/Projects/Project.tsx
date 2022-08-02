@@ -16,7 +16,7 @@ const Project: React.FC<{
 				<div className="mr-12 flex w-full flex-grow flex-col justify-between leading-7 xl:max-w-[530px]">
 					<div className="mb-16 hidden text-white xl:mb-10 xl:block">
 						<h1 className="mb-4 text-3xl text-portfolio-lightgreen 2xl:text-5xl ">
-							MY Projects
+							Project Examples
 						</h1>
 						<p className=" text-[16px] leading-5">
 							A collection of side projects i've completed over the years.
@@ -32,7 +32,7 @@ const Project: React.FC<{
 						</picture>
 					</a>
 					<div className="my-16 xl:my-0">
-						<h2 className="pb-5 text-base text-[36px] leading-7 text-portfolio-lightgreen">
+						<h2 className="pb-5 text-base text-[36px] leading-7 text-portfolio-midgreen">
 							{name}
 						</h2>
 						<p className="text-[16px] leading-7 text-white">{description}</p>

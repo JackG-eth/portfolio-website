@@ -2,7 +2,7 @@ let timelineElements = [
 	{
 		id: 1,
 		title: "Smart Contract Developer ",
-		company: "portfolio",
+		company: "Mycelium",
 		location: "Remote | London",
 		description:
 			"Part of portfolio’s smart contract development team. Hired via Tracer DAO and tasked with evolving and innovating their existing DeFi protocol. More information about the role can be found on my CV.",

@@ -11,7 +11,6 @@ function stepAnimation() {
 	tl.from("#panel-0", 1, { xPercent: 0 });
 	tl.from("#panel-1", 1, { xPercent: 0 });
 	tl.from("#panel-2", 1, { xPercent: 0 });
-	tl.from("#panel-3", 1, { xPercent: 0 });
 
 	return new ScrollMagic.Scene({
 		triggerElement: "#pinMaster",
@@ -65,24 +64,19 @@ function updateActiveStep(progress) {
 			e.classList.add("pointer-events-none", "opacity-0", "z-0");
 		});
 
-		if (progress <= 0.25) {
+		if (progress <= 0.33) {
 			slides[0].classList.add("pointer-events-all", "opacity-100", "z-10");
 			slides[0].classList.remove("pointer-events-none", "opacity-0", "z-0");
 		}
 
-		if (progress > 0.25) {
+		if (progress > 0.33 && progress <= 0.66) {
 			slides[1].classList.add("pointer-events-all", "opacity-100", "z-10");
 			slides[1].classList.remove("pointer-events-none", "opacity-0", "z-0");
 		}
 
-		if (progress > 0.5) {
+		if (progress > 0.66) {
 			slides[2].classList.add("pointer-events-all", "opacity-100", "z-10");
 			slides[2].classList.remove("pointer-events-none", "opacity-0", "z-0");
-		}
-
-		if (progress > 0.75) {
-			slides[3].classList.add("pointer-events-all", "opacity-100", "z-10");
-			slides[3].classList.remove("pointer-events-none", "opacity-0", "z-0");
 		}
 	}
 }
