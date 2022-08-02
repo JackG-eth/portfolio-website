@@ -8,17 +8,17 @@ export default function ContactForm() {
 		>
 			<div className="mr-20 w-full text-[16px] text-white xl:max-w-[800px]">
 				{/* Social Links */}
-				<span className="mb-8 block text-center text-2xl text-portfolio-lightgreen">
+				<span className="mb-8 block text-center text-2xl text-portfolio-midgreen">
 					If you want to get in touch please fill out the form below!
 				</span>
-				<form action="https://formspree.io/f/mwkyojya" method="POST">
+				<form action="https://formspree.io/f/xvoypbgw" method="POST">
 					<div className="mb-5 grid-cols-2 gap-5 sm:grid">
 						<div className="mb-5 sm:mb-0">
 							<label className="mb-2.5 block" htmlFor="First name">
 								First name
 							</label>
 							<input
-								className="h-12 w-full rounded-xl border border-portfolio-lightgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
+								className="h-12 w-full rounded-xl border border-portfolio-midgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
 								placeholder="First name"
 								name="First name"
 								type="text"
@@ -30,7 +30,7 @@ export default function ContactForm() {
 								Last name
 							</label>
 							<input
-								className="h-12 w-full rounded-xl border border-portfolio-lightgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
+								className="h-12 w-full rounded-xl border border-portfolio-midgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
 								placeholder="Last name"
 								name="Last name"
 								type="text"
@@ -43,7 +43,7 @@ export default function ContactForm() {
 							Email address
 						</label>
 						<input
-							className="h-12 w-full rounded-xl border border-portfolio-lightgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
+							className="h-12 w-full rounded-xl border border-portfolio-midgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
 							placeholder="Email address"
 							name="Email address"
 							type="email"
@@ -55,7 +55,7 @@ export default function ContactForm() {
 							Subject
 						</label>
 						<input
-							className="h-12 w-full rounded-xl border border-portfolio-lightgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
+							className="h-12 w-full rounded-xl border border-portfolio-midgreen bg-transparent px-5 text-white transition-colors duration-300 hover:border-white"
 							placeholder="Subject line"
 							name="subject"
 							type="text"
@@ -67,7 +67,7 @@ export default function ContactForm() {
 							Message
 						</label>
 						<textarea
-							className="h-20 w-full rounded-xl border border-portfolio-lightgreen bg-transparent px-5 py-4 text-white transition-colors duration-300 hover:border-white"
+							className="h-20 w-full rounded-xl border border-portfolio-midgreen bg-transparent px-5 py-4 text-white transition-colors duration-300 hover:border-white"
 							placeholder="Write your message here"
 							name="Message"
 							required
