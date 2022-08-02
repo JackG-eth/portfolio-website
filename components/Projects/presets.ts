@@ -1,5 +1,5 @@
 export const projects: any = {
-	tracer: [
+	oart: [
 		{
 			name: "Mobile Phone Application",
 			description:
