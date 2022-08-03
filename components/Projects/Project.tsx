@@ -24,11 +24,8 @@ const Project: React.FC<{
 					</div>
 					{/* Mobile image */}
 					<a href={link} rel="noreferrer" target="_blank">
-						<picture className="hidden h-auto max-h-[717px] justify-end opacity-0 xl:flex">
-							<img
-								src={image}
-								className="h-full w-auto flex-shrink rounded-xl"
-							/>
+						<picture className="mb-10 flex w-full justify-end xl:hidden">
+							<img src={image} className="w-full flex-shrink rounded-xl justify-center" />
 						</picture>
 					</a>
 					<div className="my-16 xl:my-0">
