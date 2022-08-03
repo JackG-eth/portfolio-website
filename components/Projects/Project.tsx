@@ -10,39 +10,36 @@ const Project: React.FC<{
 	return (
 		<section
 			id={id}
-			className="pointer-events-none top-0 left-0 z-0 flex w-screen items-center overflow-x-hidden xl:absolute xl:h-screen"
+			className="panel top-0 left-0 z-0 flex h-full items-center opacity-0 transition-opacity duration-500 xl:absolute xl:h-screen xl:w-screen"
 		>
-			<Container className="mx-auto flex w-full justify-between px-5 pt-0 md:pl-5 md:pr-6 xl:max-h-[calc(100vh-280px)] xl:min-h-[400px] xl:pl-12 xl:pr-11 xl:pt-5 2xl:pt-0 ">
-				<div className="mr-12 flex w-full max-w-[530px] flex-grow flex-col justify-between leading-7">
+			<Container className="flex min-h-[400px] flex-col-reverse justify-between xl:max-h-[calc(100vh-280px)] xl:flex-row xl:pt-5 2xl:pt-0">
+				<div className="mr-12 flex w-full flex-grow flex-col justify-between leading-7 xl:max-w-[530px]">
 					<div className="mb-16 hidden text-white xl:mb-10 xl:block">
-						<h1 className="mb-4 text-3xl text-portfolio-lightgreen 2xl:text-5xl ">
-							Project Examples
-						</h1>
-						<p className=" text-[16px] leading-5">
+						<h1 className="mb-4 text-3xl 2xl:text-5xl"> Project Examples</h1>
+						<p className="text-[16px] leading-5">
 							A collection of side projects i've completed over the years.
 						</p>
 					</div>
 					{/* Mobile image */}
 					<a href={link} rel="noreferrer" target="_blank">
 						<picture className="mb-10 flex w-full justify-end xl:hidden">
-							<img
-								src={image}
-								className="w-full flex-shrink justify-center rounded-xl"
-							/>
+							<img src={image} className="w-full flex-shrink rounded-xl" />
 						</picture>
 					</a>
 					<div className="my-16 xl:my-0">
-						<h2 className="pb-5 text-base text-[36px] leading-7 text-portfolio-midgreen">
+						<h2 className="text-base text-[16px] leading-7 text-white">
 							{name}
 						</h2>
-						<p className="text-[16px] leading-7 text-white">{description}</p>
+						<p className="text-[16px] leading-7 text-portfolio-lightgreen">
+							{description}
+						</p>
 						<a
 							href={link}
 							target="_blank"
 							rel="noopener"
-							className="group mt-6 block text-[16px] text-white"
+							className="group mt-6 block text-[16px] text-portfolio-lightgreen"
 						>
-							Visit Code
+							Visit website
 							<span className="inline-block translate-x-2 transform-gpu transition-all duration-300 group-hover:translate-x-3">
 								&#8594;
 							</span>
@@ -51,7 +48,7 @@ const Project: React.FC<{
 				</div>
 				{/* Desktop image */}
 				<a href={link} rel="noreferrer" target="_blank">
-					<picture className="hidden h-auto max-h-[717px] justify-end opacity-0 xl:flex">
+					<picture className="hidden h-auto max-h-[717px] justify-end xl:flex">
 						<img src={image} className="h-full w-auto flex-shrink rounded-xl" />
 					</picture>
 				</a>
