@@ -4,17 +4,20 @@ const MySkills = () => {
 	return (
 		<div
 			id="skills"
-			className="relative flex h-screen w-screen min-w-[320px] pt-40"
+			className=" pt-40"
 			//className="fixed top-0 left-0 z-50 flex h-16 w-screen min-w-[320px] items-center  md:h-20"
 		>
-			<div className="relative h-screen w-screen">
+			<div className=" ">
 				<h1 className="pb-20 text-center text-3xl text-portfolio-lightgreen">
 					Languages & Frameworks
 				</h1>
-				<div className=" flex w-screen justify-center">
-					<div className="grid h-3/4 w-2/4 grid-cols-5 items-center gap-y-14 gap-x-14 ">
+				<div className="">
+					<div className="sm:grid-cols-3 lg:grid-cols-5 grid items-center gap-y-14 gap-x-14 p-10 phone:grid-cols-2 ">
 						<div>
-							<img src="/static/img/skills/icons8-solidity-500.png" />
+							<img
+								className="justify-center"
+								src="/static/img/skills/icons8-solidity-500.png"
+							/>
 							<p className="pt-4 text-center text-white">Solidity</p>
 						</div>
 						<div>

@@ -17,6 +17,7 @@ const Home = () => {
 			<Navbar />
 			<Main />
 			<Timeline />
+			<MySkills />
 			<Projects />
 			<ContactForm />
 		</>

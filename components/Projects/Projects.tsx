@@ -5,7 +5,7 @@ import ProjectScripts from "./ProjectScripts";
 
 const Projects = () => {
 	return (
-		<div>
+		<div id="projects">
 			<section id="pinMaster" className="z-10">
 				<div
 					id="pinContainer"
