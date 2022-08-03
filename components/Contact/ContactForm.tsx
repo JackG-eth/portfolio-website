@@ -3,16 +3,17 @@ import Button from "../General/SendButton";
 export default function ContactForm() {
 	return (
 		<section className="min-h-[calc(100vh-160px)] ">
+			<span className="mb-8 block text-center text-2xl text-portfolio-midgreen">
+				If you want to get in touch please fill out the form below!
+			</span>
 			<div
 				id="contact"
-				className="container mx-auto w-full px-5 pt-20 md:pl-5 md:pr-6 md:pt-40 xl:pl-12 xl:pr-11"
+				className="container mx-auto w-full px-5 pt-20 md:pl-5 md:pr-6 md:pt-20 xl:pl-12 xl:pr-11"
 			>
-				<div className="mr-20 w-full text-[16px] text-white xl:max-w-[800px]">
-					<div className="block justify-between xl:flex">
+				<div className="mr-20 w-full items-center text-[16px] text-white ">
+					<div className="block justify-center xl:flex ">
 						{/* Social Links */}
-						<span className="mb-8 block text-center text-2xl text-portfolio-midgreen">
-							If you want to get in touch please fill out the form below!
-						</span>
+
 						<form action="https://formspree.io/f/xvoypbgw" method="POST">
 							<div className="mb-5 grid-cols-2 gap-5 sm:grid">
 								<div className="mb-5 sm:mb-0">
