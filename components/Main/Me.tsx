@@ -4,7 +4,7 @@ const Me = () => {
 	return (
 		<div
 			id="home"
-			className="relative flex h-screen w-screen flex-col items-center justify-center"
+			className="relative flex h-screen w-screen min-w-[320px] flex-col items-center justify-center"
 		>
 			<img
 				className="flex h-[300px] w-[300x] rounded-full border-8 shadow-xl "
@@ -14,7 +14,7 @@ const Me = () => {
 			<ReactTypingEffect
 				speed={200}
 				eraseDelay={2500}
-				className="pt-4 text-[32px]  leading-tight text-white"
+				className="w-screen min-w-[320px]  pt-4 text-center text-[32px] leading-tight text-white"
 				text={[
 					"Web3 Full-Stack Developer",
 					"Smart Contract Engineer",

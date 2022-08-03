@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import Logo from "../Logos/Logo";
 import MenuIcon from "./MenuIcon";
 import MobileNav from "./MobileNav";
 import Socials from "../Socials/Socials";
-import Logo from "../Logos/Logo";
 import Container from "../General/Container/Container";
 
 const Navbar = () => {
@@ -69,6 +70,23 @@ const Navbar = () => {
 		}
 	};
 
+	const setActiveLink = () => {
+		const navLinks = document.querySelectorAll(".nav-link a");
+		navLinks.forEach((navLink) => {
+			let href = navLink.getAttribute("href");
+			let container = navLink.parentNode as HTMLElement;
+			if (route.split("/")[1].includes(href.split("/")[1])) {
+				container.classList.add("active");
+			} else {
+				container.classList.remove("active");
+			}
+		});
+	};
+
+	useEffect(() => {
+		setActiveLink();
+	}, [route]);
+
 	useEffect(() => {
 		if (navOpen) {
 			disableScroll();
@@ -94,16 +112,21 @@ const Navbar = () => {
 					className={`absolute left-0 h-full w-full transition-all duration-500 [backdrop-filter:blur(10px)] ${
 						background ? "opacity-100" : "opacity-0"
 					}
-         			 ${navOpen ? "bg-portfolio-black" : "bg-portfolio-black"}`}
+          ${navOpen ? "bg-portfolio-black" : "bg-portfolio-black"}`}
 				/>
 				<Container className="relative z-10 flex items-center justify-between">
-					<div className="logo-container relative h-[34px] w-[277px]"></div>
-					<div className="absolute left-0 top-0 z-0 transition-opacity duration-500">
-						<Logo onClick={() => onclick} />
+					<div className="logo-container relative h-[34px] w-[277px]">
+						<div className="absolute left-0 top-0 z-0 transition-opacity duration-500">
+							<Logo onClick={() => closeNav()} />
+						</div>
 					</div>
 					{/* Desktop menu */}
 					<div
-						className={` absolute right-5 flex items-center justify-between opacity-100 transition-all duration-300 xl:right-12`}
+						className={`${
+							route === "/data-feeds"
+								? "pointer-events-none opacity-0"
+								: "pointer-events-none opacity-0 xl:pointer-events-auto xl:opacity-100"
+						} absolute right-5 flex items-center justify-between opacity-0 transition-all duration-300 xl:right-12`}
 					>
 						{Routes.map((route, i) => {
 							return (

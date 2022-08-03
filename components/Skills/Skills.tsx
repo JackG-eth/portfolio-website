@@ -2,7 +2,11 @@ import React from "react";
 
 const MySkills = () => {
 	return (
-		<div id="skills" className="relative flex h-screen w-screen pt-40">
+		<div
+			id="skills"
+			className="relative flex h-screen w-screen min-w-[320px] pt-40"
+			//className="fixed top-0 left-0 z-50 flex h-16 w-screen min-w-[320px] items-center  md:h-20"
+		>
 			<div className="relative h-screen w-screen">
 				<h1 className="pb-20 text-center text-3xl text-portfolio-lightgreen">
 					Languages & Frameworks

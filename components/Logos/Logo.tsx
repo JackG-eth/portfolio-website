@@ -9,7 +9,7 @@ const Logo: React.FC<{
 	return (
 		<button className={`block ${className ? className : ""}`} onClick={onClick}>
 			<Link href={"#home"} scroll={false}>
-				<span className="logo-primary h-[34px] w-[158px] cursor-pointer pl-20 text-3xl text-white transition-all duration-300 hover:text-portfolio-lightgreen">
+				<span className="logo-primary h-[34px] w-[158px] cursor-pointer text-3xl text-white transition-all duration-300 hover:text-portfolio-lightgreen">
 					Jack Hawkins
 				</span>
 			</Link>

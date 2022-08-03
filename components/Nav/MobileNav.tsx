@@ -34,9 +34,7 @@ const MobileNav: React.FC<{
 									} `}
 									onClick={() => closeNav()}
 								>
-									<Link scroll={false} href={route.to}>
-										{route.label}
-									</Link>
+									<a href={route.to}>{route.label}</a>
 									<span className="nav-underline absolute left-0 right-auto bottom-0 h-0.5 w-0 bg-portfolio-lightgreen transition-all duration-500 ease-in-out group-hover:right-0 group-hover:left-auto group-hover:w-full" />
 								</button>
 							);

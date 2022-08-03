@@ -10,9 +10,9 @@ const Project: React.FC<{
 	return (
 		<section
 			id={id}
-			className="panel bg-mycelium-darkgreen top-0 left-0 z-0 flex h-full items-center opacity-0 transition-opacity duration-500 xl:absolute xl:h-screen xl:w-screen"
+			className="pointer-events-none top-0 left-0 z-0 flex w-screen items-center overflow-x-hidden xl:absolute xl:h-screen"
 		>
-			<Container className="flex min-h-[400px] flex-col-reverse justify-between xl:max-h-[calc(100vh-280px)] xl:flex-row xl:pt-5 2xl:pt-0">
+			<Container className="mx-auto flex w-full justify-between px-5 pt-0 md:pl-5 md:pr-6 xl:max-h-[calc(100vh-280px)] xl:min-h-[400px] xl:pl-12 xl:pr-11 xl:pt-5 2xl:pt-0 ">
 				<div className="mr-12 flex w-full flex-grow flex-col justify-between leading-7 xl:max-w-[530px]">
 					<div className="mb-16 hidden text-white xl:mb-10 xl:block">
 						<h1 className="mb-4 text-3xl text-portfolio-lightgreen 2xl:text-5xl ">
@@ -24,10 +24,10 @@ const Project: React.FC<{
 					</div>
 					{/* Mobile image */}
 					<a href={link} rel="noreferrer" target="_blank">
-						<picture className="mb-10 flex h-[1920px] w-[1280px] justify-end xl:hidden">
+						<picture className="hidden h-auto max-h-[717px] justify-end opacity-0 xl:flex">
 							<img
 								src={image}
-								className="h-[1920px] w-[1280px] flex-shrink rounded-xl"
+								className="h-full w-auto flex-shrink rounded-xl"
 							/>
 						</picture>
 					</a>
