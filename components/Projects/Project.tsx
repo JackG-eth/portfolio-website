@@ -25,7 +25,10 @@ const Project: React.FC<{
 					{/* Mobile image */}
 					<a href={link} rel="noreferrer" target="_blank">
 						<picture className="mb-10 flex w-full justify-end xl:hidden">
-							<img src={image} className="w-full flex-shrink rounded-xl justify-center" />
+							<img
+								src={image}
+								className="w-full flex-shrink justify-center rounded-xl"
+							/>
 						</picture>
 					</a>
 					<div className="my-16 xl:my-0">
