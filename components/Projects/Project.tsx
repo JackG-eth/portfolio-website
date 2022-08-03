@@ -13,7 +13,7 @@ const Project: React.FC<{
 			className="pointer-events-none top-0 left-0 z-0 flex w-screen items-center overflow-x-hidden xl:absolute xl:h-screen"
 		>
 			<Container className="mx-auto flex w-full justify-between px-5 pt-0 md:pl-5 md:pr-6 xl:max-h-[calc(100vh-280px)] xl:min-h-[400px] xl:pl-12 xl:pr-11 xl:pt-5 2xl:pt-0 ">
-				<div className="mr-12 flex w-full flex-grow flex-col justify-between leading-7 xl:max-w-[530px]">
+				<div className="mr-12 flex w-full max-w-[530px] flex-grow flex-col justify-between leading-7">
 					<div className="mb-16 hidden text-white xl:mb-10 xl:block">
 						<h1 className="mb-4 text-3xl text-portfolio-lightgreen 2xl:text-5xl ">
 							Project Examples
@@ -51,7 +51,7 @@ const Project: React.FC<{
 				</div>
 				{/* Desktop image */}
 				<a href={link} rel="noreferrer" target="_blank">
-					<picture className="hidden h-auto max-h-[717px] justify-end xl:flex">
+					<picture className="hidden h-auto max-h-[717px] justify-end opacity-0 xl:flex">
 						<img src={image} className="h-full w-auto flex-shrink rounded-xl" />
 					</picture>
 				</a>
