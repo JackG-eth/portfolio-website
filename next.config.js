@@ -4,11 +4,10 @@ const nextConfig = {
 	swcMinify: true,
 	env: {
 		siteTitle: "Jacks Portfolio",
-		siteDescription:
-		  "My technology journey so far!",
-		siteUrl: "https://portfolio-website-gilt-pi.vercel.app/",
-		siteImagePreviewUrl: "preview image path in png format",
-	  },
+		siteDescription: "My technology journey so far!",
+		siteUrl: "https://www.jackhawkins.xyz/",
+		siteImagePreviewUrl: "loading-preview.png",
+	},
 };
 
 module.exports = nextConfig;
