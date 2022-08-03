@@ -17,12 +17,8 @@ const Home = () => {
 			<Navbar />
 			<Main />
 			<Timeline />
-			<div className="overflow: hidden">
-				<MySkills />
-			</div>
-			<div>
-				<Projects />
-			</div>
+			<MySkills />
+			<Projects />
 			<ContactForm />
 		</>
 	);
