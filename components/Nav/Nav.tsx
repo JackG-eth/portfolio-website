@@ -70,23 +70,6 @@ const Navbar = () => {
 		}
 	};
 
-	const setActiveLink = () => {
-		const navLinks = document.querySelectorAll(".nav-link a");
-		navLinks.forEach((navLink) => {
-			let href = navLink.getAttribute("href");
-			let container = navLink.parentNode as HTMLElement;
-			if (route.split("/")[1].includes(href.split("/")[1])) {
-				container.classList.add("active");
-			} else {
-				container.classList.remove("active");
-			}
-		});
-	};
-
-	useEffect(() => {
-		setActiveLink();
-	}, [route]);
-
 	useEffect(() => {
 		if (navOpen) {
 			disableScroll();
