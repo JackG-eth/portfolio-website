@@ -8,7 +8,7 @@ const Me = () => {
 		>
 			<img
 				className="flex h-[300px] w-[300x] rounded-full border-8 shadow-xl "
-				src="/static/img/me.png"
+				src="/static/img/meBW.jpg"
 				alt="portfolio logo"
 			/>
 			<ReactTypingEffect
