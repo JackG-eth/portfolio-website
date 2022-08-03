@@ -16,7 +16,7 @@ const Project: React.FC<{
 				<div className="mr-12 flex w-full flex-grow flex-col justify-between leading-7 xl:max-w-[530px]">
 					<div className="mb-16 hidden text-white xl:mb-10 xl:block">
 						<h1 className="mb-4 text-3xl 2xl:text-5xl"> Project Examples</h1>
-						<p className="text-[16px] leading-5">
+						<p className="text-[16px] leading-5 text-portfolio-lightgreen">
 							A collection of side projects i've completed over the years.
 						</p>
 					</div>
@@ -37,7 +37,7 @@ const Project: React.FC<{
 							href={link}
 							target="_blank"
 							rel="noopener"
-							className="group mt-6 block text-[16px] text-portfolio-lightgreen"
+							className="group mt-6 block text-[16px] text-white"
 						>
 							Visit website
 							<span className="inline-block translate-x-2 transform-gpu transition-all duration-300 group-hover:translate-x-3">
