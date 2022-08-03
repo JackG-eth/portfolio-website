@@ -82,14 +82,14 @@ function updateActiveStep(progress) {
 }
 function removeElement() {
 	const title = document.title;
-	if (!title.includes("Home")) {
+	if (!title.includes("My Journey")) {
 		const scrollMagicDiv = document.getElementById("pinMaster");
 		scrollMagicDiv.remove();
 	}
 }
 function initialiseElements() {
 	const title = document.title;
-	if (title.includes("Home")) {
+	if (title.includes("My Journey")) {
 		if (!isMobile()) {
 			initialiseScrollMagic();
 		}

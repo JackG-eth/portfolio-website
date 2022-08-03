@@ -11,8 +11,8 @@ const Home = () => {
 	return (
 		<>
 			<SEO
-				title="Home"
-				description="portfolio is an ever-growing collection of engineers, economists and creatives operating on the cutting edge of decentralised blockchain-based technology, whose ventures seek to solve the problems of today's restrictive and opaque financial infrastructure, systems and reality."
+				title="My Journey"
+				description="This website contains my the main aspects of my journey through tech so far."
 			/>
 			<Navbar />
 			<Main />
