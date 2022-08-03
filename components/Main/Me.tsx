@@ -1,5 +1,6 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
+import Button from "../General/Button";
 const Me = () => {
 	return (
 		<div
@@ -11,6 +12,15 @@ const Me = () => {
 				src="/static/img/meBW.jpg"
 				alt="portfolio logo"
 			/>
+			<div className="pt-4">
+				<a
+					className="rounded-full border p-2 text-[32px]  leading-tight text-white hover:bg-portfolio-lightgreen"
+					href="/static/files/JackHawkinsCV.pdf"
+					download="JackHawkinsCV.pdf"
+				>
+					CV
+				</a>
+			</div>
 			<ReactTypingEffect
 				speed={200}
 				eraseDelay={2500}

@@ -37,11 +37,11 @@ let timelineElements = [
 	},
 	{
 		id: 4,
-		title: "Computer Science Degree",
+		title: "Computer Science Degree | First Class Honours (76%)",
 		company: "University of Surrey",
 		location: "Surrey",
 		description:
-			"Embarked on a 4-year computer science degree in which I achieved a First Class Honours, specialising in AI and Data Science in the final year.",
+			"Embarked on a 4-year computer science degree specialising in AI and Data Science during the final year.",
 		date: "September 2016 - 2020",
 		icon: "school",
 	},
