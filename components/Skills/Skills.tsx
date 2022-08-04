@@ -11,8 +11,8 @@ const MySkills = () => {
 				<h1 className="pb-20 text-center text-3xl text-portfolio-lightgreen">
 					Languages & Frameworks
 				</h1>
-				<div className="">
-					<div className="sm:grid-cols-3 lg:grid-cols-5 grid items-center gap-y-14 gap-x-14 p-10 phone:grid-cols-2 ">
+				<div className="flex h-full w-full items-center justify-center">
+					<div className="grid items-center gap-y-14 gap-x-14 p-10 phone:grid-cols-2 sm:grid-cols-3 lg:w-2/4 lg:grid-cols-5 ">
 						<div>
 							<img
 								className="justify-center"
