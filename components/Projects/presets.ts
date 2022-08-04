@@ -3,7 +3,7 @@ export const projects: any = {
 		{
 			name: "Mobile Phone Application",
 			description:
-				"An Android phone application for visitors to the EPIC wildlife and conservation project. EPICs mission statement is twofold: To create a small but significant wildlife reserve in an area primarily targeted for new housing, and to make the reserve accessible and of maximum interest to the public in order to promote physical and mental well-being and education.",
+				"An Android phone application for visitors to the EPIC wildlife and conservation project. EPIC's mission statement is twofold: To create a small but significant wildlife reserve in an area primarily targeted for new housing, and to make the reserve accessible and of maximum interest to the public in order to promote physical and mental well-being and education.",
 			link: "https://github.com/JackG-eth/Dissertation/tree/master/Epic",
 			image: "/static/img/projects/epic.jpg",
 		},
