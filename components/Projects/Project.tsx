@@ -17,7 +17,7 @@ const Project: React.FC<{
 					<div className="mb-16 hidden text-white xl:mb-10 xl:block">
 						<h1 className="mb-4 text-3xl 2xl:text-5xl"> Project Examples</h1>
 						<p className="text-[16px] leading-5 text-portfolio-lightgreen">
-							A collection of side projects i've completed over the years.
+							A collection of side projects I've completed over the years.
 						</p>
 					</div>
 					{/* Mobile image */}

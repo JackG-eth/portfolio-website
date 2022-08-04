@@ -17,7 +17,7 @@ let timelineElements = [
 		company: "BNY Mellon",
 		location: "Remote | London",
 		description:
-			"Hired as a Graduate Developer working within the trade and securities sector ensuring sucessful settlement of funds.",
+			"Hired as a Graduate Developer working within the trade and securities sector ensuring successful settlement of funds.",
 		buttonText: "Company Wesbite",
 		date: "July 2021 - April 2022",
 		icon: "work",
@@ -50,7 +50,7 @@ let timelineElements = [
 		title: "College",
 		company: "Sion",
 		location: "Brighton",
-		description: "Studied Maths, Physics, Chemsitry and Design & Technology",
+		description: "Studied Maths, Physics, Chemistry and Design & Technology",
 		date: "2014-2016",
 		icon: "school",
 	},

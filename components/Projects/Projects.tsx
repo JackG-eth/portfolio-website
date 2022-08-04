@@ -20,7 +20,7 @@ const Projects = () => {
 										Project Examples
 									</h1>
 									<p className="text-[16px] leading-5 text-portfolio-lightgreen lg:invisible">
-										A collection of side projects i've completed over the years.
+										A collection of side projects I've completed over the years.
 									</p>
 								</div>
 							</div>
