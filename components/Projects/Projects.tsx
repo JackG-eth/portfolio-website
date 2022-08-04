@@ -12,6 +12,26 @@ const Projects = () => {
 					className="relative z-10 transform-gpu xl:h-screen xl:w-screen"
 				>
 					{/* Keep "Our projects" text visible at all times on desktop */}
+					<section className="bg-mycelium-darkgreen pointer-events-none top-0 left-0 z-0 flex w-screen items-center overflow-x-hidden xl:absolute xl:h-screen">
+						<Container className="flex justify-between pt-0 xl:max-h-[calc(100vh-280px)] xl:min-h-[400px] xl:pt-5 2xl:pt-0 ">
+							<div className="mr-12 flex w-full max-w-[530px] flex-grow flex-col justify-between leading-7">
+								<div className="mb-16 text-white xl:mb-10">
+									<h1 className="mb-4 text-3xl lg:invisible 2xl:text-5xl">
+										Project Examples
+									</h1>
+									<p className="text-[16px] leading-5 text-portfolio-lightgreen lg:invisible">
+										A collection of side projects i've completed over the years.
+									</p>
+								</div>
+							</div>
+							<picture className="hidden h-auto max-h-[717px] justify-end opacity-0 xl:flex">
+								<img
+									src="/static/img/projects/epic.jpg"
+									className="h-full w-auto flex-shrink rounded-xl"
+								/>
+							</picture>
+						</Container>
+					</section>
 					{Object.keys(projects).map((project, i) => {
 						const currentProject = projects[project][0];
 						return (

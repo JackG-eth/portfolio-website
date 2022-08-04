@@ -57,7 +57,7 @@ const SEO: React.FC<{
 			<meta name="twitter:description" content={metaDescription} />
 			<meta name="twitter:image" content={imagePreview} />
 
-			<title>{title} | Porfolio</title>
+			<title>{title} | Portfolio</title>
 		</Head>
 	);
 };
