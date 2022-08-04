@@ -6,7 +6,7 @@ let timelineElements = [
 		location: "Remote | London",
 		description:
 			"Part of Mycelium's smart contract development team. Hired via Tracer DAO and tasked with evolving and innovating their existing DeFi protocol. More information about the role can be found on my CV.",
-		buttonText: "Company Wesbite",
+		buttonText: "Company Website",
 		date: "April 2022 - August 2022",
 		icon: "work",
 		link: "https://mycelium.xyz/",
@@ -18,7 +18,7 @@ let timelineElements = [
 		location: "Remote | London",
 		description:
 			"Hired as a Graduate Developer working within the trade and securities sector ensuring successful settlement of funds.",
-		buttonText: "Company Wesbite",
+		buttonText: "Company Website",
 		date: "July 2021 - April 2022",
 		icon: "work",
 		link: "https://www.bnymellon.com/",
