@@ -16,10 +16,10 @@ const Projects = () => {
 						<Container className="flex justify-between pt-0 xl:max-h-[calc(100vh-280px)] xl:min-h-[400px] xl:pt-5 2xl:pt-0 ">
 							<div className="mr-12 flex w-full max-w-[530px] flex-grow flex-col justify-between leading-7">
 								<div className="mb-16 text-white xl:mb-10">
-									<h1 className="mb-4 text-3xl 2xl:text-5xl">
+									<h1 className="mb-4 text-3xl lg:invisible 2xl:text-5xl">
 										Project Examples
 									</h1>
-									<p className="text-[16px] leading-5 text-portfolio-lightgreen">
+									<p className="text-[16px] leading-5 text-portfolio-lightgreen lg:invisible">
 										A collection of side projects i've completed over the years.
 									</p>
 								</div>
