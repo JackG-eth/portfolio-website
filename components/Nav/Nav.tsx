@@ -126,8 +126,6 @@ const Navbar = () => {
 					</div>
 					<MenuIcon navOpen={navOpen} toggleNav={toggleNav} />
 				</Container>
-				{/* Mobile menu */}
-				<MobileNav routes={Routes} navOpen={navOpen} closeNav={closeNav} />
 			</nav>
 		</>
 	);
