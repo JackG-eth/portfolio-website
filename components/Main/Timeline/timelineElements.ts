@@ -1,18 +1,6 @@
 let timelineElements = [
 	{
 		id: 1,
-		title: "DeFi Developer",
-		company: "Laser Digital | Nomura",
-		location: "London",
-		description:
-			"Building low latency connectivity across various exchanges on various blockchains",
-		buttonText: "Company Website",
-		date: "Sept 2022 - Present",
-		icon: "work",
-		link: "https://www.laserdigital.com/",
-	},
-	{
-		id: 2,
 		title: "Smart Contract Developer ",
 		company: "Mycelium",
 		location: "Remote | London",
@@ -24,7 +12,7 @@ let timelineElements = [
 		link: "https://mycelium.xyz/",
 	},
 	{
-		id: 3,
+		id: 2,
 		title: "Full-Stack Developer",
 		company: "BNY Mellon",
 		location: "Remote | London",
@@ -36,7 +24,7 @@ let timelineElements = [
 		link: "https://www.bnymellon.com/",
 	},
 	{
-		id: 4,
+		id: 3,
 		title: "Full-Stack Support Developer",
 		company: "15below",
 		location: "Brighton",
@@ -48,7 +36,7 @@ let timelineElements = [
 		icon: "work",
 	},
 	{
-		id: 5,
+		id: 4,
 		title: "Computer Science Degree | First Class Honours (76%)",
 		company: "University of Surrey",
 		location: "Surrey",
@@ -58,7 +46,7 @@ let timelineElements = [
 		icon: "school",
 	},
 	{
-		id: 6,
+		id: 5,
 		title: "College",
 		company: "Sion",
 		location: "Brighton",
