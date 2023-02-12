@@ -14,7 +14,7 @@ const Home = () => {
 				title="My Journey"
 				description="This website contains my the main aspects of my journey through tech so far."
 			/>
-			<Navbar />
+
 			<Main />
 			<Timeline />
 			<MySkills />
